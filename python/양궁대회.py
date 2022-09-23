@@ -20,7 +20,6 @@ def solution(n, info):
                 answer.append(list(reversed(lion)))
     if len(answer) == 0:
         answer.append([-1])
-    answer.sort()
+    answer.sort(reverse = True)
     return list(reversed(answer[0]))
-
 print(solution(5,[2,1,1,1,0,0,0,0,0,0,0]))
